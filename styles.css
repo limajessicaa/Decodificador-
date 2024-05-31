@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); 
+
+*{
+    background-color: var(--cor--tercearia);
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+}
+
+:root{
+    --cor-primaria: #F3F5FC;
+    --cor-secundaria: #0A3871;
+    --cor--tercearia: #D8DFE8;
+    --cor-hover: #45565F;
+
+    --font-principal:"Inter", sans-serif;
+}
+
+.cabecalho{
+    margin-left: 10px;       /*margem a esquerda*/
+    padding-top: 10px;       /*espaco top*/   
+    width: 9%;               /*largura*/
+}
+
+main{
+    display: flex;      /*ao lado do outro texto*/
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.texto{
+    border: none;
+    color: var(--cor-secundaria);
+    margin-top: 90px;
+    text-transform: lowercase;
+}
+::placeholder {color:var(--cor-secundaria); }
+    .texto1:focus{ 
+        outline: none;
+    }
+
+.infomacao{
+    background-image: url("./asset/vector.png");
+    background-repeat: no-repeat;
+    font-size: 12px;
+    font-weight: 18px;
+    line-height: 18px;
+    color: var(--cor-hover);
+    margin-left: 15px;
+
+}    
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 18px;
+    margin-left: 15px;
+    box-shadow: 3px 5px 12px transparent;
+    justify-content: space-around;
+ }
+
+.btn__codificador{
+    background-color: var(--cor-secundaria);
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 24px;
+    color: var(--cor-primaria);
+    cursor: pointer; 
+    height: 67px;
+    width: 328px;
+
+}
+
+.btn__decodificador{
+    background-color: var(--cor--tercearia);
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 24px;
+    color: var(--cor-secundaria);
+    cursor: pointer;  
+    height: 67px;
+    width: 328px;
+}
+
+.mensagem{
+    background-color: var(--cor-primaria);
+    background-image: url();
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: var(--cor-secundaria);
+    margin-left: 98px;
+    margin-top: 40px;
+    padding-left: 10px;
+    position: fixed;
+  
+}
+.mensagem:focus{
+    outline: none;
+}
+
+.btn__copiar{
+    background-color: var(--cor-secundaria);
+    border-radius: 24px;
+    color: var(--cor-primaria);
+    position: absolute;
+    cursor: pointer;
+    position: fixed;
+    height: 67px;
+    width: 336px;
+    margin-left: 108px;
+    margin-top: 402px;
+
+}
+
+.rodape{
+    text-align: center;
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+}
+
+.credito{
+    color: var(--cor-hover);
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.redes{
+    margin: 15px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: var(--cor-hover);
+   }
